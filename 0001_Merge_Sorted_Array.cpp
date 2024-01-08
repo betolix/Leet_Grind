@@ -10,14 +10,20 @@ public:
 
             while( i >= 0 && j >= 0 ){
                 if(nums1[i] >= nums2[j]){
-                    nums1[index--] = nums1[i--];
+                    nums1[index] = nums1[i];
+                    index--;
+                    i--;
                 }
                 else{
-                    nums1[index--] = nums2[j--];
+                    nums1[index] = nums2[j];
+                    index--;
+                    j--;
                 }
             }
             while(j>=0){
-                nums1[index--] = nums2[j--];
+                nums1[index] = nums2[j];
+                index--;
+                j--;
             }
     }
 };
