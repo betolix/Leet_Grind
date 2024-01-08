@@ -40,6 +40,8 @@ int main() {
 /*
 g++ 0001_Merge_Sorted_Array.cpp -o 0001_Merge_Sorted_Array.out
 
+clang++ 0001_Merge_Sorted_Array.cpp -std=c++14 -o 0001_Merge_Sorted_Array.out
+
 88. Merge Sorted Array
 Solved
 
