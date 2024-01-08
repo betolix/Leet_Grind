@@ -36,6 +36,8 @@ int main() {
 
 /*
 
+g++ 0002_Remove_Element.cpp -o 0002_Remove_Element.out
+
 27. Remove Element
 Solved
 
