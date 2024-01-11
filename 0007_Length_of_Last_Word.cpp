@@ -14,14 +14,11 @@ public:
 
         for (int i = size; i >= 0; i--)
         {
-            //if ( s.charAt(i) != ' ')
             if (s[i] != 32){
                 flag = 1;
                 counter++;
             }
-            //if (flag>0 && s.charAt(i) == ' ')
             if (flag>0 && s[i] == 32){
-                //cout<<"WEEEE"<<s[i]<<"WEEEE"<<endl;
                 break;
             }
         }
@@ -34,14 +31,10 @@ int main()
 
     Solution solution;
     string str = "  fly me  to    the moon ";
-    //string str = "moon o";
-    //char str1[28] = "  fly me  to    the moon ";
-    
+    //string str = "       moon    ";
+        
     cout << "Length of last word is: " << solution.lengthOfLastWord(str)<<endl;
 
-    string str1="  ";
-    string str2="  ";
-    char ccc=' ';
        
 }
 
