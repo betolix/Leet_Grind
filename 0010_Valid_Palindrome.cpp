@@ -28,3 +28,38 @@ int main() {
     cout<<solution.isPalindrome(strs);
     
 }
+
+
+/*
+BETTER APPROACH FROM LEET -> EVALUATE AND DISCUSS
+
+class Solution {
+public:
+    bool isPalindrome(string s) {
+        string a;
+        for(int i = 0; i < s.length(); i++)
+        {
+            if(s[i] <= 'z' && s[i] >= 'a')
+            {
+                a.push_back(s[i]);
+            }
+            else if(s[i] <= 'Z' && s[i] >= 'A')
+            {
+                a.push_back(s[i] + 32);
+            }
+            else if(s[i] <= '9' && s[i] >= '0')
+            {
+                a.push_back(s[i] + 32);
+            }
+        }
+        int n = a.length() - 1;
+        if(n == 0 || n == -1) return 1;
+        for(int i = 0; i < a.length() / 2 + 1; i++)
+        {
+            if(a[i] != a[n - i]) return 0;
+        }
+        return 1;
+    }
+};
+
+*/
